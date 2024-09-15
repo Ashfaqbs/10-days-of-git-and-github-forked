@@ -1,68 +1,6 @@
 
 </div>
 
-- [Day 1](#day-1)
-  - [Basic Command Lines](#basic-command-lines)
-    - [Current working directory](#current-working-directory)
-    - [Navigating directory](#navigating-directory)
-    - [Making Directory](#making-directory)
-    - [List files and directories](#list-files-and-directories)
-    - [Detail list](#detail-list)
-    - [Creating file](#creating-file)
-    - [Opening and writing on file](#opening-and-writing-on-file)
-    - [Opening file to read](#opening-file-to-read)
-    - [Copy file](#copy-file)
-    - [Rename file](#rename-file)
-    - [Moving file and directory](#moving-file-and-directory)
-    - [Delete file and directory](#delete-file-and-directory)
-- [Day 2](#day-2)
-  - [Git and GitHub](#git-and-github)
-    - [1. Install Git](#1-install-git)
-    - [2. Checking status of the repository](#2-checking-status-of-the-repository)
-    - [3. Configure your name and your email](#3-configure-your-name-and-your-email)
-    - [4. Create a local git repository](#4-create-a-local-git-repository)
-    - [5. Initialize Git](#5-initialize-git)
-    - [6. Add file to the staging area](#6-add-file-to-the-staging-area)
-    - [7. Unstage a file](#7-unstage-a-file)
-    - [8. Commit the changes](#8-commit-the-changes)
-    - [9. Git log](#9-git-log)
-    - [10. Git log --oneline](#10-git-log---oneline)
-    - [11. Git log -<limit>](#11-git-log--limit)
-    - [12. Git check out](#12-git-check-out)
-    - [13. Creating a branch](#13-creating-a-branch)
-    - [14. Create account on GitHub](#14-create-account-on-github)
-    - [15. Create Repository on GitHub](#15-create-repository-on-github)
-    - [16. Connecting git with remote repository](#16-connecting-git-with-remote-repository)
-    - [17. Push](#17-push)
-    - [18. Merge](#18-merge)
-    - [19. Pull](#19-pull)
-    - [20. Git clone](#20-git-clone)
-    - [21. Rename Branch](#21-rename-branch)
-    - [22. Deleting Branch](#22-deleting-branch)
-    - [23. The .gitignore file](#23-the-gitignore-file)
-    - [24 Forking](#24-forking)
-  - [Git cheat sheet:](#git-cheat-sheet)
-- [Day 3](#day-3)
-  - [Git repository user interface features](#git-repository-user-interface-features)
-- [Day 4](#day-4)
-  - [GitHub page](#github-page)
-- [Day 5](#day-5)
-  - [Documenting on GitHub](#documenting-on-github)
-  - [GitHub Markdown](#github-markdown)
-  - [GitHub wiki](#github-wiki)
-- [Day 6](#day-6)
-  - [Collaborating on GitHub](#collaborating-on-github)
-    - [Educational Resources](#educational-resources)
-- [Day 7](#day-7)
-  - [Advanced git features](#advanced-git-features)
-- [Day 8](#day-8)
-  - [GitHub workflow](#github-workflow)
-- [Day 9](#day-9)
-  - [Connecting GitHub with Heroku](#connecting-github-with-heroku)
-- [Day 10](#day-10)
-
-# Day 1
-
 ## Basic Command Lines
 
 Developers need to know basic Unix commands. Some tasks necessary need to be done using git bash, mac terminal, or window command prompt. In this tutorial, we will use git bash to learn the basics of the Unix command which you may need as a developer. This is not an exhaustive list but it is enough for daily uses. To make use of git bash first you should install [git](https://git-scm.com/). You can install by just clicking the next button up to the end of the installation.
@@ -74,8 +12,8 @@ If you prefer watching the tutorial, click this [link](https://www.youtube.com/w
 Checking the working directory using the command _pwd_.
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~$ pwd
-/c/Users/Asabeneh
+ MINGW64 ~$ pwd
+/c/Users/Ashfaqbs
 ```
 
 ### Navigating directory
@@ -83,15 +21,15 @@ Asabeneh@DESKTOP-KGC1AKC MINGW64 ~$ pwd
 Now, let's go to the Desktop using cd(change directory).
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~$ cd Desktop
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop
+ MINGW64 ~$ cd Desktop
+ MINGW64 ~/Desktop
 ```
 
 To check where you are at, use the _pwd_ command age
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop$ pwd
-/c/Users/Asabeneh/Desktop
+ MINGW64 ~/Desktop$ pwd
+/c/Users/Ashfaqbs/Desktop
 ```
 
 We use _cd_ to get into a directory(folder) and we use _cd.._ to get out from a directory, in other words, we use _cd_ to go forward into a directory and _cd .._ to go backward from a directory.
@@ -102,16 +40,16 @@ Now, let's create a directory inside the Desktop. Call the name of the directory
 Use the _mkdir_ command to make a directory(folder)
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop$ mkdir 10-days-of-code
+ MINGW64 ~/Desktop$ mkdir 10-days-of-code
 ```
 
 Now let's go to the 10-days-of-code folder using _cd_ command.
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop$ cd 10-days-of-code
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ pwd
-/c/Users/Asabeneh/Desktop/10-days-of-code
+ MINGW64 ~/Desktop$ cd 10-days-of-code
+ MINGW64 ~/Desktop/10-days-of-code
+ MINGW64 ~/Desktop/10-days-of-code$ pwd
+/c/Users/Ashfaqbs/Desktop/10-days-of-code
 ```
 
 ### List files and directories
@@ -119,19 +57,19 @@ Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ pwd
 We can check the files and directories we have in a directory(folder) using the _ls_ command.
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ ls
+ MINGW64 ~/Desktop/10-days-of-code$ ls
 ```
 
 No files or directories were found in the 10-days-of-code folder because we didn't create them yet. Let's create some directories
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ mkdir day-1
+ MINGW64 ~/Desktop/10-days-of-code$ mkdir day-1
 ```
 
 Now let's check if there are some files or directories in the 10-days-of-code folder.
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ ls
+ MINGW64 ~/Desktop/10-days-of-code$ ls
 day-1
 ```
 
@@ -142,13 +80,13 @@ Now let's create multiple folders at one and use _ls_ to see all the directories
 Making multiple folders at once
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ mkdir day-2 day-3 day-4 day-5 day-6 day-7 day-8 day-9 day-10
+ MINGW64 ~/Desktop/10-days-of-code$ mkdir day-2 day-3 day-4 day-5 day-6 day-7 day-8 day-9 day-10
 ```
 
 Using _ls_ we can see all the directories we have in the 10-days-of-code
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code
+ MINGW64 ~/Desktop/10-days-of-code
 $ ls
 day-1  day-10  day-2  day-3  day-4  day-5  day-6  day-7  day-8  day-9
 ```
@@ -158,21 +96,21 @@ day-1  day-10  day-2  day-3  day-4  day-5  day-6  day-7  day-8  day-9
 Let's see a detailed list of the directories using multiple commands, _ls -la_.
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code
+ MINGW64 ~/Desktop/10-days-of-code
 $ ls -la
 total 20
-drwxr-xr-x 1 Asabeneh 197121 0 Jan 19 02:16 .
-drwxr-xr-x 1 Asabeneh 197121 0 Jan 19 02:05 ..
-drwxr-xr-x 1 Asabeneh 197121 0 Jan 19 02:12 day-1
-drwxr-xr-x 1 Asabeneh 197121 0 Jan 19 02:16 day-10
-drwxr-xr-x 1 Asabeneh 197121 0 Jan 19 02:16 day-2
-drwxr-xr-x 1 Asabeneh 197121 0 Jan 19 02:16 day-3
-drwxr-xr-x 1 Asabeneh 197121 0 Jan 19 02:16 day-4
-drwxr-xr-x 1 Asabeneh 197121 0 Jan 19 02:16 day-5
-drwxr-xr-x 1 Asabeneh 197121 0 Jan 19 02:16 day-6
-drwxr-xr-x 1 Asabeneh 197121 0 Jan 19 02:16 day-7
-drwxr-xr-x 1 Asabeneh 197121 0 Jan 19 02:16 day-8
-drwxr-xr-x 1 Asabeneh 197121 0 Jan 19 02:16 day-9
+drwxr-xr-x 1 Ashfaqbs 197121 0 Jan 19 02:16 .
+drwxr-xr-x 1 Ashfaqbs 197121 0 Jan 19 02:05 ..
+drwxr-xr-x 1 Ashfaqbs 197121 0 Jan 19 02:12 day-1
+drwxr-xr-x 1 Ashfaqbs 197121 0 Jan 19 02:16 day-10
+drwxr-xr-x 1 Ashfaqbs 197121 0 Jan 19 02:16 day-2
+drwxr-xr-x 1 Ashfaqbs 197121 0 Jan 19 02:16 day-3
+drwxr-xr-x 1 Ashfaqbs 197121 0 Jan 19 02:16 day-4
+drwxr-xr-x 1 Ashfaqbs 197121 0 Jan 19 02:16 day-5
+drwxr-xr-x 1 Ashfaqbs 197121 0 Jan 19 02:16 day-6
+drwxr-xr-x 1 Ashfaqbs 197121 0 Jan 19 02:16 day-7
+drwxr-xr-x 1 Ashfaqbs 197121 0 Jan 19 02:16 day-8
+drwxr-xr-x 1 Ashfaqbs 197121 0 Jan 19 02:16 day-9
 ```
 
 Using the above command, we can see the detailed view of a directory or a file
@@ -182,8 +120,8 @@ Using the above command, we can see the detailed view of a directory or a file
 Now, let's see how to create a file. We can use the _touch_ command to write a file.
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ touch day-1.txt
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ ls
+ MINGW64 ~/Desktop/10-days-of-code$ touch day-1.txt
+ MINGW64 ~/Desktop/10-days-of-code$ ls
 day-1  day-1.txt  day-10  day-2  day-3  day-4  day-5  day-6  day-7  day-8  day-9
 ```
 
@@ -194,7 +132,7 @@ As you can see, there is day-1.txt in the list. That means we have created the d
 Now, let's open the day-1.txt file and add some text to it. We use the _nano_ command to open and write.
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ nano day-1.txt
+ MINGW64 ~/Desktop/10-days-of-code$ nano day-1.txt
 ```
 
 ![](/images/nano.png)
@@ -212,7 +150,7 @@ After you write Y then click enter.
 We can use the _cat_ command just only to read the file.
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ cat day-1.txt
+ MINGW64 ~/Desktop/10-days-of-code$ cat day-1.txt
 This is my first text. I have never written on nano text editor before
 ```
 
@@ -221,10 +159,10 @@ This is my first text. I have never written on nano text editor before
 Let's have day-1-backup.txt from day-1.txt by copying using the _cp_ command.
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code
+ MINGW64 ~/Desktop/10-days-of-code
 $ cp day-1.txt day-1-backup.txt
 
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code $ ls
+ MINGW64 ~/Desktop/10-days-of-code $ ls
 day-1  day-1.txt  day-10  day-1-backup.txt  day-2  day-3  day-4  day-5  day-6  day-7  day-8  day-9
 ```
 
@@ -235,8 +173,8 @@ The _mv_ command is used both to change the name of a file and to move a file in
 Let's have more files in the 10-days-of-code folder. We can use the _touch_ command to create files.
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ touch day-2.txt day-3.txt day-4.txt day-5.txt
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ ls
+ MINGW64 ~/Desktop/10-days-of-code$ touch day-2.txt day-3.txt day-4.txt day-5.txt
+ MINGW64 ~/Desktop/10-days-of-code$ ls
 day-1      day-10          day-2      day-3      day-4      day-5      day-6  day-8
 day-1.txt  day-1-backup.txt  day-2.txt  day-3.txt  day-4.txt  day-5.txt  day-7  day-9
 ```
@@ -244,9 +182,9 @@ day-1.txt  day-1-backup.txt  day-2.txt  day-3.txt  day-4.txt  day-5.txt  day-7  
 Now, let's rename the day-2.txt to second-day.txt using the _mv_ command.
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ mv day-2.txt second-day.txt
+ MINGW64 ~/Desktop/10-days-of-code$ mv day-2.txt second-day.txt
 
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ ls
+ MINGW64 ~/Desktop/10-days-of-code$ ls
 day-1      day-10          day-2  day-3.txt  day-4.txt  day-5.txt  day-7  day-9
 day-1.txt  day-1-backup.txt  day-3  day-4      day-5      day-6      day-8  second-day.txt
 
@@ -255,8 +193,8 @@ day-1.txt  day-1-backup.txt  day-3  day-4      day-5      day-6      day-8  seco
 Let's rename the day-10 directory to day-ten.
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ mv day-10 day-ten
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ ls
+ MINGW64 ~/Desktop/10-days-of-code$ mv day-10 day-ten
+ MINGW64 ~/Desktop/10-days-of-code$ ls
 day-1      day-1-backup.txt  day-3      day-4      day-5      day-6  day-8  day-ten
 day-1.txt  day-2           day-3.txt  day-4.txt  day-5.txt  day-7  day-9  second-day.txt
 ```
@@ -267,30 +205,30 @@ The _mv_ and _cp_ commands can be used to put files into a directory. The _cp_ m
 Let's move the day-1.txt day-1 folder.
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ mv day-1.txt day-1
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ ls
+ MINGW64 ~/Desktop/10-days-of-code$ mv day-1.txt day-1
+ MINGW64 ~/Desktop/10-days-of-code$ ls
 day-1           day-2  day-3.txt  day-4.txt  day-5.txt  day-7  day-9    second-day.txt
 day-1-backup.txt  day-3  day-4      day-5      day-6      day-8  day-ten
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ cd day-1
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code/day-1$ ls
+ MINGW64 ~/Desktop/10-days-of-code$ cd day-1
+ MINGW64 ~/Desktop/10-days-of-code/day-1$ ls
 day-1.txt
 ```
 
 Let's try to move a file using the _cp_ command. Let's move the day-1-backup.txt to day-1 folder
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-git/10-days-of-code
+ MINGW64 ~/Desktop/10-days-of-git/10-days-of-code
 $ cp day-1-backup.txt day-1
 
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-git/10-days-of-code
+ MINGW64 ~/Desktop/10-days-of-git/10-days-of-code
 $ cd day-1
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-git/10-days-of-code/day-1
+ MINGW64 ~/Desktop/10-days-of-git/10-days-of-code/day-1
 $ ls
 day-1.txt  day-1-backup.txt
 
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-git/10-days-of-code/day-1
+ MINGW64 ~/Desktop/10-days-of-git/10-days-of-code/day-1
 $ cd ..
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-git/10-days-of-code
+ MINGW64 ~/Desktop/10-days-of-git/10-days-of-code
 $ ls
 day-1             day-2  day-3.txt  day-4.txt  day-5.txt  day-7  day-9    second-day.txt
 day-1-backup.txt  day-3  day-4      day-5      day-6      day-8  day-ten
@@ -300,24 +238,24 @@ The copied version of day-1-backup.txt moved to a day-1 folder.
 Now let's create multiple backup files first and move them to a backup folder
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ mkdir backups
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ cd backups
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code/backups$ touch day-2-backup.txt day-3-backup.txt
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code/backups$ ls
+ MINGW64 ~/Desktop/10-days-of-code$ mkdir backups
+ MINGW64 ~/Desktop/10-days-of-code$ cd backups
+ MINGW64 ~/Desktop/10-days-of-code/backups$ touch day-2-backup.txt day-3-backup.txt
+ MINGW64 ~/Desktop/10-days-of-code/backups$ ls
 day-2-backup.txt  day-3-backup.txt
 ```
 
 Moving multiple files
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code
+ MINGW64 ~/Desktop/10-days-of-code
 $ mv -t backups day-1-backup.txt day-2-backup.txt  day-3-backup.txt
 ```
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code
+ MINGW64 ~/Desktop/10-days-of-code
 $ cd backups/
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code/backups
+ MINGW64 ~/Desktop/10-days-of-code/backups
 $ ls
 day-1-backup.txt  day-2-backup.txt  day-3-backup.txt
 ```
@@ -327,27 +265,27 @@ day-1-backup.txt  day-2-backup.txt  day-3-backup.txt
 Let's remove the file using the _rm_ command. Let's remove the day-1-backup.txt file from the day-1 folder.
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code
+ MINGW64 ~/Desktop/10-days-of-code
 $ cd day-1
 
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code/day-1
+ MINGW64 ~/Desktop/10-days-of-code/day-1
 $ ls
 day-1.txt  day-1-backup.txt
 
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code/day-1
+ MINGW64 ~/Desktop/10-days-of-code/day-1
 $ rm  day-1-backup.txt
 
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code/day-1$ ls
+ MINGW64 ~/Desktop/10-days-of-code/day-1$ ls
 day-1.txt
 ```
 
 Let's delete the day-ten folder using _rmdir_ command. The _rmdir_ delete a folder.
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code
+ MINGW64 ~/Desktop/10-days-of-code
 $ rmdir day-ten
 
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code
+ MINGW64 ~/Desktop/10-days-of-code
 $ ls
 backups  day-2  day-3.txt  day-4.txt  day-5.txt  day-7  day-9
 day-1    day-3  day-4      day-5      day-6      day-8  second-day.txt
@@ -356,9 +294,9 @@ day-1    day-3  day-4      day-5      day-6      day-8  second-day.txt
 Now, let's copy the backups folder to backups-2 and backup-3 using _cp_ command. Then we will delete backups-3. The _cp_ with _-r_ has been used to copy it recursively.
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ cp -r backups backups-2
+ MINGW64 ~/Desktop/10-days-of-code$ cp -r backups backups-2
 
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ ls
+ MINGW64 ~/Desktop/10-days-of-code$ ls
 backups    day-1  day-3      day-4      day-5      day-6  day-8  second-day.txt
 backups-2  day-2  day-3.txt  day-4.txt  day-5.txt  day-7  day-9
 ```
@@ -366,9 +304,9 @@ backups-2  day-2  day-3.txt  day-4.txt  day-5.txt  day-7  day-9
 Now let's do the above step to create backups-3
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code
+ MINGW64 ~/Desktop/10-days-of-code
 $ cp -r backups backups-3
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code
+ MINGW64 ~/Desktop/10-days-of-code
 $ ls
 backups    backups-3  day-2  day-3.txt  day-4.txt  day-5.txt  day-7  day-9
 backups-2  day-1      day-3  day-4      day-5      day-6      day-8  second-day.txt
@@ -377,15 +315,11 @@ backups-2  day-1      day-3  day-4      day-5      day-6      day-8  second-day.
 Now the backups-3 has files and neither the _rm_ nor the _rmdir_ deletes it. Therefore, we can use multiple commands to delete it. Let's try it with the following command.
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ rm -rf backups-3
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ ls
+ MINGW64 ~/Desktop/10-days-of-code$ rm -rf backups-3
+ MINGW64 ~/Desktop/10-days-of-code$ ls
 backups    day-1  day-3      day-4      day-5      day-6  day-8  second-day.txt
 backups-2  day-2  day-3.txt  day-4.txt  day-5.txt  day-7  day-9
 ```
-
-_Congratulations! Now you knew basic command lines_
-
-# Day 2
 
 ## Git and GitHub
 
@@ -609,8 +543,8 @@ GitHub allows to download a project using a URL. It is the same as downloading b
 For instance, to clone this repository, you need to run the following command
 
 ```sh
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~$ cd Desktop
-Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop$ git clone https://github.com/Asabeneh/10-days-of-git-and-github.git
+ MINGW64 ~$ cd Desktop
+ MINGW64 ~/Desktop$ git clone https://github.com/Ashfaqbs/10-days-of-git-and-github.git
 ```
 
 ### 21. Rename Branch
